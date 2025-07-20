@@ -5,7 +5,7 @@ export interface PostProps {
   body: string;
 }
 
-export interface WelcomeProps {
+export interface UserProps {
   id: number;
   name: string;
   username: string;
@@ -47,7 +47,7 @@ export interface PostModalProps {
   onSubmit: (post: PostData) => void;
 }
 
-export interface UserProps {
+export interface UserData {
   id: number;
   name: string;
   username: string;

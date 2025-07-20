@@ -1,6 +1,6 @@
-import { WelcomeProps } from "@/interfaces";
+import { UserProps } from "@/interfaces";
 
-const UserCard: React.FC<{ user: WelcomeProps }> = ({ user }) => {
+const UserCard: React.FC<{ user: UserProps }> = ({ user }) => {
   return (
     <div className="max-w-sm md:max-w-md bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden p-6 hover:shadow-xl transition-shadow duration-300">
       <div className="flex items-center gap-4">
