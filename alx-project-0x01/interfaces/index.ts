@@ -62,3 +62,8 @@ export interface UserModalProps {
   onClose: () => void;
   onSubmit: (user: UserData) => void;
 }
+
+export interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+}
