@@ -1,34 +1,34 @@
 import { UserProps } from "@/interfaces";
 
-const UserCard: React.FC<{ user: UserProps }> = ({ user }) => {
+const UserCard: React.FC<{ post: UserProps }> = ({ post }) => {
   return (
     <div className="max-w-sm md:max-w-md bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden p-6 hover:shadow-xl transition-shadow duration-300">
       <div className="flex items-center gap-4">
-        <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xl font-bold">{user.name.charAt(0)}</div>
+        <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 text-xl font-bold">{post.name.charAt(0)}</div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{user.name}</h2>
-          <p className="text-sm text-gray-500 dark:text-gray-300">@{user.username}</p>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{post.name}</h2>
+          <p className="text-sm text-gray-500 dark:text-gray-300">@{post.username}</p>
         </div>
       </div>
 
       <div className="mt-4 space-y-2 text-sm text-gray-700 dark:text-gray-200">
         <p>
-          <span className="font-medium">Email:</span> {user.email}
+          <span className="font-medium">Email:</span> {post.email}
         </p>
         <p>
-          <span className="font-medium">Phone:</span> {user.phone}
+          <span className="font-medium">Phone:</span> {post.phone}
         </p>
         <p>
           <span className="font-medium">Website:</span>{" "}
-          <a href={`https://${user.website}`} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
-            {user.website}
+          <a href={`https://${post.website}`} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+            {post.website}
           </a>
         </p>
         <p>
-          <span className="font-medium">Address:</span> {`${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`}
+          <span className="font-medium">Address:</span> {`${post.address.street}, ${post.address.suite}, ${post.address.city}, ${post.address.zipcode}`}
         </p>
         <p>
-          <span className="font-medium">Company:</span> {user.company.name} - <em>{user.company.catchPhrase}</em>
+          <span className="font-medium">Company:</span> {post.company.name} - <em>{post.company.catchPhrase}</em>
         </p>
       </div>
     </div>
