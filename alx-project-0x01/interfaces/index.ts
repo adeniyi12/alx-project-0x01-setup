@@ -60,7 +60,7 @@ export interface UserProps {
 
 export interface UserModalProps {
   onClose: () => void;
-  onSubmit: (user: UserProps) => void;
+  onSubmit: (post: UserProps) => void;
 }
 
 export interface ButtonProps {
