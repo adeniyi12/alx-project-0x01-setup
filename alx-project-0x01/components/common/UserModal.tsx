@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { UserData, UserModalProps } from "@/interfaces";
+import { UserProps, UserModalProps } from "@/interfaces";
 
-const initialForm: UserData = {
+const initialForm: UserProps = {
   id: 0,
   name: "",
   username: "",
@@ -26,7 +26,7 @@ const initialForm: UserData = {
 };
 
 const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
-  const [formData, setFormData] = useState<UserData>(initialForm);
+  const [formData, setFormData] = useState<UserProps>(initialForm);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
